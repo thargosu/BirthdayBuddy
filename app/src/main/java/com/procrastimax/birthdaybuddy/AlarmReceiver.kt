@@ -29,7 +29,7 @@ class AlarmReceiver : BroadcastReceiver() {
             val event =
                 IOHandler.convertStringToEventDate(
                     context,
-                    intent!!.getStringExtra(MainActivity.FRAGMENT_EXTRA_TITLE_EVENTSTRING)
+                    intent!!.getStringExtra(MainActivity.FRAGMENT_EXTRA_TITLE_EVENTSTRING).toString()
                 )
             val notificationID =
                 intent.getIntExtra(MainActivity.FRAGMENT_EXTRA_TITLE_NOTIFICATIONID, 0)

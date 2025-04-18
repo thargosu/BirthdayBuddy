@@ -4,7 +4,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
     defaultConfig {
         applicationId "com.procrastimax.birthdaybuddy"
         minSdkVersion 21
@@ -23,6 +23,10 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+    buildFeatures {
+        viewBinding = true
+    }
+    namespace 'com.procrastimax.birthdaybuddy'
 }
 
 dependencies {
